@@ -14,9 +14,7 @@ ReactDOM.render(
 
 	<div className ='main-container'>
 
-		<Header />
-		<Results />
-		<Search />
+		<Main />
 
 	</div>,
 	document.getElementByID('app')

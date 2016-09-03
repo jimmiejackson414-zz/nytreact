@@ -12,6 +12,7 @@ var cheerio = require('cheerio');
 
 // Use morgan and bodyParser wit app
 app.use(logger('dev'));
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: false
 }));
@@ -58,8 +59,11 @@ app.get('/api/saved', function(req, res) {
 });
 
 app.post('/api/saved', function(req, res) {
-	
+
 })
 
 
-
+// listen on port 3000
+app.listen(process.env.PORT || 3000, function() {
+	console.log('App running on port 3000');
+});
