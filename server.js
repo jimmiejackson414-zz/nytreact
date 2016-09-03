@@ -45,7 +45,7 @@ var Article = require('./models/Article.js');
 
 // main index route
 app.get('/', function(req, res) {
-	res.send(index.html);
+	res.send('./public/index.html');
 });
 
 app.get('/api/saved', function(req, res) {
